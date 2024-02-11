@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yes or No Quiz</title>
+</head>
+<body>
+    <h1>{{ question['Question'] }}</h1>
+    <form action="/" method="post">
+        <input type="hidden" name="question" value="{{ question['Question'] }}">
+        <button type="submit" name="answer" value="yes">Yes</button>
+        <button type="submit" name="answer" value="no">No</button>
+    </form>
+</body>
+</html>
